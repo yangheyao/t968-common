@@ -1,0 +1,16 @@
+lcd_debug.c:119:		if (power_step->type >= LCD_POWER_TYPE_MAX)
+lcd_debug.c:121:		switch (power_step->type) {
+lcd_debug.c:125:				i, power_step->type, power_step->index,
+lcd_debug.c:126:				power_step->value, power_step->delay);
+lcd_debug.c:130:				i, power_step->type, power_step->index,
+lcd_debug.c:131:				power_step->delay);
+lcd_debug.c:135:				i, power_step->type, power_step->delay);
+lcd_vout.c:200:		if (power_step->type >= LCD_POWER_TYPE_MAX)
+lcd_vout.c:205:				power_step->type, power_step->index,
+lcd_vout.c:206:				power_step->value, power_step->delay);
+lcd_vout.c:208:		switch (power_step->type) {
+lcd_vout.c:210:			index = power_step->index;
+lcd_vout.c:211:			lcd_cpu_gpio_set(index, power_step->value);
+lcd_vout.c:224:			index = power_step->index;
+lcd_vout.c:244:		if (power_step->delay)
+lcd_vout.c:245:			mdelay(power_step->delay);

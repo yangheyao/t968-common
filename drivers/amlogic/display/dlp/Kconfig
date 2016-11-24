@@ -1,0 +1,12 @@
+#
+# Dlp output configuration
+#
+menu "Amlogic DLP Output Module"
+
+config AML_DLP
+	boolean "DLP Output Module"
+	default y
+	help
+		DLP output module
+
+endmenu
